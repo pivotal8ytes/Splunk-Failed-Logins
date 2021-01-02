@@ -1,0 +1,3 @@
+index="_audit" failed action="login attempt" 
+| stats count(action) as "Failed Attempts" by user 
+| sort - "Failed Attempts"
